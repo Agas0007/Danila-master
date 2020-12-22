@@ -594,7 +594,7 @@ main ul:not([class]) li::before {
   background: #FFFFFF;
   border-radius: 5px;
   padding: 40px;
-  width: 495px;
+  max-width: 495px;
 }
 
 .modal_form .modal_form-title {
