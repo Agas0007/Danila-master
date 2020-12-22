@@ -1,0 +1,80 @@
+.vacancie{
+  background: #F9F9FA;
+  padding: 0 0 50px 0;
+}
+
+.vacancie_wrapper{
+  display: flex;
+  flex-flow: column;
+    
+}
+
+.vacancie_article{
+  background: #F1F1F1;
+  padding: 28px 28px 20px;
+  margin: 0 0 30px 0;
+  display: flex;
+  flex-flow: row;
+  
+  .vacancie_article_left{
+    width: 960px;
+    margin: 0 20px 0 0;
+    
+    .vacancie_article_title {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 29px;
+      color: #000000;
+      margin: 0 0 15px 0;
+    }
+    
+    .vacancie_article_text{
+      margin: 0 0 15px 0;
+      p {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 25px;
+        color: #333333;
+      }
+    }
+    
+    .vacancie_article_response {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 158.47%;
+      color: #64B734;
+    }
+    
+    
+    
+  }
+  
+  .vacancie_article_right{
+    width: calc(100% - 980px);
+    display: flex;
+    flex-flow: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    
+    .vacancie_article_price {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 29px;
+      color: #000000;
+    }
+    
+    .vacancie_article_date {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 29px;
+      color: #AEAEAE;
+    }
+    
+  }
+  
+}

@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>TITLE</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/public/css/slick/slick-theme.css">
+  <link rel="stylesheet" href="/public/css/slick/slick.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
+
+  <link rel="stylesheet" href="/public/css/main.css">
+</head>
+
+<body>
+  <header>
+    <div class="header_top">
+      <div class="grid_container">
+        <div class="header_top_wrapper">
+          <a href="" class="header_top_logotip">
+            <img src="/public/images/logo.png" alt="">
+          </a>
+          <div class="header_top_right">
+            <div class="header_top_search">
+              <span class="button_hidden_search" onclick="$('.form_search').slideToggle('slow');"></span>
+              <form action="<?php echo get_page_link(168);?>" method='GET' class="form_search">
+                <input type="text" required name="catinfo" value="" placeholder="Поиск">
+                <button type="submit" class="search_button button_hover_green">
+                  Поиск
+                </button>
+              </form>
+            </div>
+            <div class="header_top_address left_back">
+              <p>Ликино-Дулево, деревня Коротково, 121</p>
+            </div>
+            <div class="header_top_time left_back">
+              <p>Ежедневно <br> 08:30–19:00</p>
+            </div>
+            <div class="header_top_phone">
+              <a href="tel:8 (800) 000-00-00" class="header_phone">8 (800) 000-00-00</a>
+              <a href="#modal" class="button button_hover_ellow">Заказать звонок</a>
+            </div>
+            <a href="<? echo get_site_url(); ?>/cart" class="header_basket">
+              <div class="bascet_number">
+                <span id="order">
+                  0
+                </span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header_bottom">
+      <div class="grid_container">
+        <div class="header_bottom_wrapper">
+          <div class="header_hambuger">
+            <svg class="ham ham6" xmlns="http://www.w3.org/2000/svg" width="23" height="16" fill="none"><defs/><path stroke="#333" stroke-width="2" d="M0 1h23M0 8h23M0 15h23"/></svg>
+            <span class="hambuger_title">Каталог товаров</span>
+            <span class="hambuger_title hambuger_title-mobail">Меню</span>
+
+            <div class="header_nav_left">
+              <div class="header_nav_left-block">
+                <span class="header_nav_left-title">Каталог товаров</span>
+                <span class="header_nav_left-block-closed closed">x</span>
+              </div>
+              <nav class="nav_category">
+
+                <!--             удалить блок div без класса перед подключением меню Wordpress-->
+                <div>
+                  <ul>
+                    <li>
+                      <a href="">Стройматериалы</a>
+                      <div class="nav_subcategories">
+                        <div class="nav_title">
+                          <h3>Стройматериалы</h3>
+                        </div>
+                        <ul>
+                          <li><a href="">Сухие смеси и грунтовки</a>
+                            <ul class="sub-menu">
+                              <li><a href="">Цемент</a></li>
+                              <li><a href="">Добавки для бетонов и растворов</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="">Кирпич</a>
+                            <ul class="sub-menu">
+                              <li><a href="">Строительный кирпич</a></li>
+                              <li><a href="">Облицовочный кирпич</a></li>
+                              <li><a href="">Шамотный кирпич</a></li>
+                              <li><a href="">Клинкерный кирпич</a></li>
+                              <li><a href="">Гибкие связи</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="">Блоки строительные</a>
+                            <ul class="sub-menu">
+                              <li><a href="">Блоки газобетонные</a></li>
+                              <li><a href="">Пазогребневые плиты</a></li>
+                              <li><a href="">Блоки керамзитобетонные</a></li>
+                              <li><a href="">Блоки керамические</a></li>
+                              <li><a href="">Перемычки</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="">Фанера, OSB, ДСП, ДВП</a>
+                            <ul class="sub-menu">
+                              <li><a href="">Фанера</a></li>
+                              <li><a href="">OSB</a></li>
+                              <li><a href="">ДВП</a></li>
+                              <li><a href="">ДСП</a></li>
+                              <li><a href="">ЦСП</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="">Песок, щебень, керамзит</a>
+                            <ul class="sub-menu">
+                              <li><a href="">Керамзит</a></li>
+                              <li><a href="">Песок</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="">Строительные смеси, грунтовки</a>
+                            <ul class="sub-menu">
+                              <li><a href="">Штукатурки</a></li>
+                              <li><a href="">Грунтовки</a></li>
+                              <li><a href="">Плиточные клеи</a></li>
+                              <li><a href="">Шпаклевки</a></li>
+                              <li><a href="">Наливные полы</a></li>
+                              <li><a href="">Цементно-песчаные смеси</a></li>
+                              <li><a href="">Кладочные и монтажные смеси</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="">Гипсокартон, ГВЛ, СМЛ</a>
+                            <ul class="sub-menu">
+                              <li><a href="">Гипсокартон</a></li>
+                              <li><a href="">Гипсоволокнистый лист</a></li>
+                              <li><a href="">Аквапанель</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="">Профиль и комплектующие</a>
+                            <ul class="sub-menu">
+                              <li><a href="">Профили для гипсокартона</a></li>
+                              <li><a href="">Подвесы</a></li>
+                              <li><a href="">Соединитель профиля</a></li>
+                              <li><a href="">Уплотнительные ленты</a></li>
+                              <li><a href="">Удлинитель профиля</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="">Пены, герметики, клей</a>
+                            <ul class="sub-menu">
+                              <li><a href="">Клей универсальный</a></li>
+                              <li><a href="">Пена монтажная</a></li>
+                              <li><a href="">Клей жидкие гвозди</a></li>
+                              <li><a href="">Герметики</a></li>
+                              <li><a href="">Пистолеты</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="">Сухие смеси и грунтовки</a>
+                            <ul class="sub-menu">
+                              <li><a href="">Цемент</a></li>
+                              <li><a href="">Добавки для бетонов и растворов</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="">Кирпич</a>
+                            <ul class="sub-menu">
+                              <li><a href="">Строительный кирпич</a></li>
+                              <li><a href="">Облицовочный кирпич</a></li>
+                              <li><a href="">Шамотный кирпич</a></li>
+                              <li><a href="">Клинкерный кирпич</a></li>
+                              <li><a href="">Гибкие связи</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="">Кирпич</a>
+                            <ul class="sub-menu">
+                              <li><a href="">Строительный кирпич</a></li>
+                              <li><a href="">Облицовочный кирпич</a></li>
+                              <li><a href="">Шамотный кирпич</a></li>
+                              <li><a href="">Клинкерный кирпич</a></li>
+                              <li><a href="">Гибкие связи</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="">Кирпич</a>
+                            <ul class="sub-menu">
+                              <li><a href="">Строительный кирпич</a></li>
+                              <li><a href="">Облицовочный кирпич</a></li>
+                              <li><a href="">Шамотный кирпич</a></li>
+                              <li><a href="">Клинкерный кирпич</a></li>
+                              <li><a href="">Гибкие связи</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="">Кирпич</a>
+                            <ul class="sub-menu">
+                              <li><a href="">Строительный кирпич</a></li>
+                              <li><a href="">Облицовочный кирпич</a></li>
+                              <li><a href="">Шамотный кирпич</a></li>
+                              <li><a href="">Клинкерный кирпич</a></li>
+                              <li><a href="">Гибкие связи</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="">Кирпич</a>
+                            <ul class="sub-menu">
+                              <li><a href="">Строительный кирпич</a></li>
+                              <li><a href="">Облицовочный кирпич</a></li>
+                              <li><a href="">Шамотный кирпич</a></li>
+                              <li><a href="">Клинкерный кирпич</a></li>
+                              <li><a href="">Гибкие связи</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+
+                    </li>
+                    <li><a href="">Столярные изделия</a></li>
+                    <li><a href="">Окна и двери</a></li>
+                    <li><a href="">Сантехника</a>
+                      <div class="nav_subcategories">
+                        <div class="nav_title">
+                          <h3>Сантехника</h3>
+                        </div>
+                        <ul>
+                          <li><a href="">тЕСТОВЫЙ СПИСОК</a>
+                            <ul class="sub-menu">
+                              <li><a href="">Тест</a></li>
+                              <li><a href="">тест</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="">Кирпич</a>
+                            <ul class="sub-menu">
+                              <li><a href="">Строительный кирпич</a></li>
+                              <li><a href="">Облицовочный кирпич</a></li>
+                              <li><a href="">Шамотный кирпич</a></li>
+                              <li><a href="">Клинкерный кирпич</a></li>
+                              <li><a href="">Гибкие связи</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="">Блоки строительные</a>
+                            <ul class="sub-menu">
+                              <li><a href="">Блоки газобетонные</a></li>
+                              <li><a href="">Пазогребневые плиты</a></li>
+                              <li><a href="">Блоки керамзитобетонные</a></li>
+                              <li><a href="">Блоки керамические</a></li>
+                              <li><a href="">Перемычки</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="">Фанера, OSB, ДСП, ДВП</a>
+                            <ul class="sub-menu">
+                              <li><a href="">Фанера</a></li>
+                              <li><a href="">OSB</a></li>
+                              <li><a href="">ДВП</a></li>
+                              <li><a href="">ДСП</a></li>
+                              <li><a href="">ЦСП</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="">Песок, щебень, керамзит</a>
+                            <ul class="sub-menu">
+                              <li><a href="">Керамзит</a></li>
+                              <li><a href="">Песок</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="">Строительные смеси, грунтовки</a>
+                            <ul class="sub-menu">
+                              <li><a href="">Штукатурки</a></li>
+                              <li><a href="">Грунтовки</a></li>
+                              <li><a href="">Плиточные клеи</a></li>
+                              <li><a href="">Шпаклевки</a></li>
+                              <li><a href="">Наливные полы</a></li>
+                              <li><a href="">Цементно-песчаные смеси</a></li>
+                              <li><a href="">Кладочные и монтажные смеси</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="">Гипсокартон, ГВЛ, СМЛ</a>
+                            <ul class="sub-menu">
+                              <li><a href="">Гипсокартон</a></li>
+                              <li><a href="">Гипсоволокнистый лист</a></li>
+                              <li><a href="">Аквапанель</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="">Профиль и комплектующие</a>
+                            <ul class="sub-menu">
+                              <li><a href="">Профили для гипсокартона</a></li>
+                              <li><a href="">Подвесы</a></li>
+                              <li><a href="">Соединитель профиля</a></li>
+                              <li><a href="">Уплотнительные ленты</a></li>
+                              <li><a href="">Удлинитель профиля</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="">Пены, герметики, клей</a>
+                            <ul class="sub-menu">
+                              <li><a href="">Клей универсальный</a></li>
+                              <li><a href="">Пена монтажная</a></li>
+                              <li><a href="">Клей жидкие гвозди</a></li>
+                              <li><a href="">Герметики</a></li>
+                              <li><a href="">Пистолеты</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="">Сухие смеси и грунтовки</a>
+                            <ul class="sub-menu">
+                              <li><a href="">Цемент</a></li>
+                              <li><a href="">Добавки для бетонов и растворов</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="">Кирпич</a>
+                            <ul class="sub-menu">
+                              <li><a href="">Строительный кирпич</a></li>
+                              <li><a href="">Облицовочный кирпич</a></li>
+                              <li><a href="">Шамотный кирпич</a></li>
+                              <li><a href="">Клинкерный кирпич</a></li>
+                              <li><a href="">Гибкие связи</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="">Кирпич</a>
+                            <ul class="sub-menu">
+                              <li><a href="">Строительный кирпич</a></li>
+                              <li><a href="">Облицовочный кирпич</a></li>
+                              <li><a href="">Шамотный кирпич</a></li>
+                              <li><a href="">Клинкерный кирпич</a></li>
+                              <li><a href="">Гибкие связи</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="">Кирпич</a>
+                            <ul class="sub-menu">
+                              <li><a href="">Строительный кирпич</a></li>
+                              <li><a href="">Облицовочный кирпич</a></li>
+                              <li><a href="">Шамотный кирпич</a></li>
+                              <li><a href="">Клинкерный кирпич</a></li>
+                              <li><a href="">Гибкие связи</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="">Кирпич</a>
+                            <ul class="sub-menu">
+                              <li><a href="">Строительный кирпич</a></li>
+                              <li><a href="">Облицовочный кирпич</a></li>
+                              <li><a href="">Шамотный кирпич</a></li>
+                              <li><a href="">Клинкерный кирпич</a></li>
+                              <li><a href="">Гибкие связи</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="">Кирпич</a>
+                            <ul class="sub-menu">
+                              <li><a href="">Строительный кирпич</a></li>
+                              <li><a href="">Облицовочный кирпич</a></li>
+                              <li><a href="">Шамотный кирпич</a></li>
+                              <li><a href="">Клинкерный кирпич</a></li>
+                              <li><a href="">Гибкие связи</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li><a href="">Напольные покрытия</a></li>
+                    <li><a href="">Внутренняя отделка</a></li>
+                    <li><a href="">Наружная отделка</a></li>
+                    <li><a href="">Отопительное оборудование</a></li>
+                    <li><a href="">Водоснабжение и канализация</a></li>
+                    <li><a href="">Электрика и освещение</a></li>
+                    <li><a href="">Вентиляция и кондиционирование</a></li>
+                    <li><a href="">Метизы и крепеж</a></li>
+                    <li><a href="">Средства индивидуальной защиты</a></li>
+                    <li><a href="">Хозяйственные товары</a></li>
+                    <li><a href="">Товары для сада</a></li>
+                    <li><a href="">Товары для огорода</a></li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+
+          </div>
+          <div class="header_nav_right">
+            <div class="header_nav_right-catalog">
+              <span class="open-category">Каталог товаров</span>
+              <span class="header_nav_right-catalog-closed closed">x</span>
+            </div>
+            <nav>
+              <!--             удалить блок div без класса перед подключением меню Wordpress-->
+              <div>
+                <ul>
+                  <li><a href="">Акции</a></li>
+                  <li><a href="">Доставка и самовывоз</a></li>
+                  <li class="menu-item-has-children">
+                    <a href="">Наши услуги</a>
+                    <ul class="sub-menu">
+                      <li><a href="">Наши услуги1</a></li>
+                      <li><a href="">Наши услуги2</a></li>
+                      <li><a href="">Наши услуги3</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="">О компании</a></li>
+                  <li><a href="">Статьи</a></li>
+                  <li><a href="">Вакансии</a></li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+          <a href="" class="personal_area"></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="breadcrumbs">
+      <div class="grid_container">
+        <div class="breadcrumb_wrapper">
+          <ul>
+            <li>
+              <a href="" class="breadcrumbs__link">
+                <span>Интернет-магазин</span>
+              </a>
+            </li>
+            <li class="breadcrumbs__current">Услуги</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="vacancie">
+      <div class="grid_container">
+        <h1 class="stock-title">Вакансии</h1>
+        <div class="vacancie_wrapper">
+          <div class="vacancie_article">
+            <div class="vacancie_article_left">
+              <h3 class="vacancie_article_title">Грузчик</h3>
+              <div class="vacancie_article_text">
+                <p>
+                  Следует отметить, что курс на социально-ориентированный национальный проект является качественно новой ступенью стандартных подходов. Мы вынуждены отталкиваться от того, что убеждённость некоторых оппонентов говорит о возможностях соответствующих условий активизации. Приятно, граждане, наблюдать, как представители современных социальных резервов неоднозначны
+                </p>
+              </div>
+              <a href="" class="vacancie_article_response">
+                Откликнуться
+              </a>
+            </div>
+            <div class="vacancie_article_right">
+              <span class="vacancie_article_price">30 000 руб.</span>
+              <span class="vacancie_article_date">26 ноября</span>
+            </div>
+          </div>
+          <div class="vacancie_article">
+            <div class="vacancie_article_left">
+              <h3 class="vacancie_article_title">Грузчик</h3>
+              <div class="vacancie_article_text">
+                <p>
+                  Следует отметить, что курс на социально-ориентированный национальный проект является качественно новой ступенью стандартных подходов. Мы вынуждены отталкиваться от того, что убеждённость некоторых оппонентов говорит о возможностях соответствующих условий активизации. Приятно, граждане, наблюдать, как представители современных социальных резервов неоднозначны
+                </p>
+              </div>
+              <a href="" class="vacancie_article_response">
+                Откликнуться
+              </a>
+            </div>
+            <div class="vacancie_article_right">
+              <span class="vacancie_article_price">30 000 руб.</span>
+              <span class="vacancie_article_date">26 ноября</span>
+            </div>
+          </div>
+          <div class="vacancie_article">
+            <div class="vacancie_article_left">
+              <h3 class="vacancie_article_title">Грузчик</h3>
+              <div class="vacancie_article_text">
+                <p>
+                  Следует отметить, что курс на социально-ориентированный национальный проект является качественно новой ступенью стандартных подходов. Мы вынуждены отталкиваться от того, что убеждённость некоторых оппонентов говорит о возможностях соответствующих условий активизации. Приятно, граждане, наблюдать, как представители современных социальных резервов неоднозначны
+                </p>
+              </div>
+              <a href="" class="vacancie_article_response">
+                Откликнуться
+              </a>
+            </div>
+            <div class="vacancie_article_right">
+              <span class="vacancie_article_price">30 000 руб.</span>
+              <span class="vacancie_article_date">26 ноября</span>
+            </div>
+          </div>
+          <div class="vacancie_article">
+            <div class="vacancie_article_left">
+              <h3 class="vacancie_article_title">Грузчик</h3>
+              <div class="vacancie_article_text">
+                <p>
+                  Следует отметить, что курс на социально-ориентированный национальный проект является качественно новой ступенью стандартных подходов. Мы вынуждены отталкиваться от того, что убеждённость некоторых оппонентов говорит о возможностях соответствующих условий активизации. Приятно, граждане, наблюдать, как представители современных социальных резервов неоднозначны
+                </p>
+              </div>
+              <a href="" class="vacancie_article_response">
+                Откликнуться
+              </a>
+            </div>
+            <div class="vacancie_article_right">
+              <span class="vacancie_article_price">30 000 руб.</span>
+              <span class="vacancie_article_date">26 ноября</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>  
+  </main>
+
+  <footer>
+    <div class="footer_top">
+      <div class="grid_container">
+        <div class="footer_top_wrapper">
+          <div class="footer_top_left">
+            <div class="footer_top_list">
+              <h5>Компания</h5>
+              <ul>
+                <li><a href="">О компании</a></li>
+                <li><a href="">Контакты</a></li>
+                <li><a href="">Вакансии</a></li>
+              </ul>
+            </div>
+            <div class="footer_top_list">
+              <h5>Услуги</h5>
+              <ul>
+                <li>
+                  <a href="">Доставка и разгрузка</a>
+                </li>
+                <li>
+                  <a href="">Доставка и разгрузка</a>
+                </li>
+                <li>
+                  <a href="">Доставка и разгрузка</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer_top_list">
+              <h5>Покупателям</h5>
+              <ul>
+                <li><a href="">Оплата заказа</a></li>
+                <li><a href="">Обмен и возврат</a></li>
+                <li><a href="">Статьи</a></li>
+                <li><a href="">О защите потребителей</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer_top_right">
+            <a href="tel:" class="phone">8 (800) 000-00-00</a>
+            <span id="button_phone">
+              <a href="" class="button_phone">Заказать звонок</a>
+            <span>
+            <div class="footer_top_soial-link_email">
+              <div class="footer_top_email">
+                <span>Напишите нам:</span>
+                <a href="mailto:info@yandex.ru">info@yandex.ru</a>
+              </div>
+              <div class="footer_top_soial-link">
+                <a href="" class="telegram"></a>
+                <a href="" class="wh"></a>
+                <a href="" class="inst"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer_bottom">
+      <div class="grid_container">
+        <div class="footer_bottom_wrapper">
+          <div class="footer_bottom_left">
+            <span class="footer_bottom-link">© 2020 - Данила-мастер</span>
+            <a href="" class="footer_bottom-link">Политика конфиденциальности</a>
+            <a href="" class="footer_bottom-link">Карта сайта</a>
+          </div>
+          <div class="footer_bottom_right">
+            <a href="" class="is-art">Разработано</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="/public/js/jquery/jquery-3.5.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="/public/js/jquery-ui.min.js"></script>
+  <script src="/public/js/jquery.ui.touch-punch.min.js"></script>
+  <script src="/public/js/jquery/jquery.slick/slick.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+  <script src="/public/js/user.js"></script>
+
+  <script>
+    $(function() {
+      $("#tabs").tabs();
+    });
+  </script>
+
+
+</body>
+
+</html>

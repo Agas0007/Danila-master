@@ -1,0 +1,51 @@
+/*----------------css---------------*/
+
+.breadcrumbs {
+  background: #F9F9FA;
+  padding: 0 0 30px;
+}
+.breadcrumb_wrapper{
+  padding: 29px 0 0 0;
+}
+
+.breadcrumb_wrapper ul {
+  display: flex;
+  flex-flow: row wrap;
+}
+.breadcrumb_wrapper ul li {
+  padding: 0;
+  margin: 0 25px 10px 0;
+}
+.breadcrumb_wrapper ul li a {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #9494A4;
+
+}
+
+.breadcrumb_wrapper ul li:last-child{
+  color: #C1C1C2;
+}
+
+
+.breadcrumb_wrapper ul li::before{
+  display: none;
+}
+
+
+.breadcrumb_wrapper ul li {
+
+
+}
+
+.breadcrumb_wrapper ul li a::after {
+    position: absolute;
+    content: '';
+    top: 4px;
+    right: -15px;
+    width: 5px;
+    height: 10px;
+    background: url(/public/images/bredcrumbs.svg) no-repeat center;
+}

@@ -1,0 +1,14 @@
+.button_hover_ellow,
+.button_hover_green{
+  transition: all .7s ease;
+}
+
+.button_hover_ellow:hover{
+  background: #FFDD4D !important;
+}
+
+.button_hover_green:hover{
+  background: #64B734 !important;
+  color: #333!important;
+}
+

@@ -1,0 +1,1097 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>TITLE</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="public/css/slick/slick-theme.css">
+  <link rel="stylesheet" href="public/css/slick/slick.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
+  <link rel="stylesheet" href="public/css/main.css">
+</head>
+
+<body>
+  <header>
+    <div class="header_top">
+      <div class="grid_container">
+        <div class="header_top_wrapper">
+          <a href="" class="header_top_logotip">
+            <img src="public/images/logo.png" alt="">
+          </a>
+          <div class="header_top_right">
+            <div class="header_top_search">
+              <span class="button_hidden_search" onclick="$('.form_search').slideToggle('slow');"></span>
+              <form action="<?php echo get_page_link(168);?>" method='GET' class="form_search">
+                <input type="text" required name="catinfo" value="" placeholder="Поиск">
+                <button type="submit" class="search_button button_hover_green">
+                  Поиск
+                </button>
+              </form>
+            </div>
+            <div class="header_top_address left_back">
+              <p>Ликино-Дулево, деревня Коротково, 121</p>
+            </div>
+            <div class="header_top_time left_back">
+              <p>Ежедневно <br> 08:30–19:00</p>
+            </div>
+            <div class="header_top_phone">
+              <a href="tel:8 (800) 000-00-00" class="header_phone">8 (800) 000-00-00</a>
+              <span id="modal">
+                <a href="#modal_form" class="button button_hover_ellow" data-effect="mfp-zoom-in">Заказать звонок</a>
+              </span>
+            </div>
+            <a href="<? echo get_site_url(); ?>/cart" class="header_basket">
+              <div class="bascet_number">
+                <span id="order">
+                  0
+                </span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header_bottom">
+      <div class="grid_container">
+        <div class="header_bottom_wrapper">
+          <div class="header_hambuger">
+
+<svg class="ham ham6" xmlns="http://www.w3.org/2000/svg" width="23" height="16" fill="none"><defs/><path stroke="#333" stroke-width="2" d="M0 1h23M0 8h23M0 15h23"/></svg>
+
+            <span class="hambuger_title">Каталог товаров</span>
+            <span class="hambuger_title hambuger_title-mobail">Меню</span>
+
+            <div class="header_nav_left">
+              <div class="header_nav_left-block">
+                <span class="header_nav_left-title">Каталог товаров</span>
+                <span class="header_nav_left-block-closed closed">x</span>
+              </div>
+              <nav class="nav_category">
+                <div>
+                  <ul>
+                    <li>
+                      <a href="card_product.html">Стройматериалы</a>
+                      <div class="next"></div>
+                      <div class="nav_subcategories">
+                        <div class="nav_title">
+                        <span class="btn-back"></span>
+                          <h3>Стройматериалы</h3>
+                          <span class="header_nav_left-block-closed closed">x</span>
+                        </div>
+                        <ul>
+                          <li><a href="">Сухие смеси и грунтовки</a>
+                            <ul class="sub-menu">
+                              <li><a href="">Цемент</a></li>
+                              <li><a href="">Добавки для бетонов и растворов</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="">Кирпич</a>
+                            <ul class="sub-menu">
+                              <li><a href="">Строительный кирпич</a></li>
+                              <li><a href="">Облицовочный кирпич</a></li>
+                              <li><a href="">Шамотный кирпич</a></li>
+                              <li><a href="">Клинкерный кирпич</a></li>
+                              <li><a href="">Гибкие связи</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="">Блоки строительные</a>
+                            <ul class="sub-menu">
+                              <li><a href="">Блоки газобетонные</a></li>
+                              <li><a href="">Пазогребневые плиты</a></li>
+                              <li><a href="">Блоки керамзитобетонные</a></li>
+                              <li><a href="">Блоки керамические</a></li>
+                              <li><a href="">Перемычки</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="">Фанера, OSB, ДСП, ДВП</a>
+                            <ul class="sub-menu">
+                              <li><a href="">Фанера</a></li>
+                              <li><a href="">OSB</a></li>
+                              <li><a href="">ДВП</a></li>
+                              <li><a href="">ДСП</a></li>
+                              <li><a href="">ЦСП</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="">Песок, щебень, керамзит</a>
+                            <ul class="sub-menu">
+                              <li><a href="">Керамзит</a></li>
+                              <li><a href="">Песок</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="">Строительные смеси, грунтовки</a>
+                            <ul class="sub-menu">
+                              <li><a href="">Штукатурки</a></li>
+                              <li><a href="">Грунтовки</a></li>
+                              <li><a href="">Плиточные клеи</a></li>
+                              <li><a href="">Шпаклевки</a></li>
+                              <li><a href="">Наливные полы</a></li>
+                              <li><a href="">Цементно-песчаные смеси</a></li>
+                              <li><a href="">Кладочные и монтажные смеси</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="">Гипсокартон, ГВЛ, СМЛ</a>
+                            <ul class="sub-menu">
+                              <li><a href="">Гипсокартон</a></li>
+                              <li><a href="">Гипсоволокнистый лист</a></li>
+                              <li><a href="">Аквапанель</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="">Профиль и комплектующие</a>
+                            <ul class="sub-menu">
+                              <li><a href="">Профили для гипсокартона</a></li>
+                              <li><a href="">Подвесы</a></li>
+                              <li><a href="">Соединитель профиля</a></li>
+                              <li><a href="">Уплотнительные ленты</a></li>
+                              <li><a href="">Удлинитель профиля</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="">Пены, герметики, клей</a>
+                            <ul class="sub-menu">
+                              <li><a href="">Клей универсальный</a></li>
+                              <li><a href="">Пена монтажная</a></li>
+                              <li><a href="">Клей жидкие гвозди</a></li>
+                              <li><a href="">Герметики</a></li>
+                              <li><a href="">Пистолеты</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="">Сухие смеси и грунтовки</a>
+                            <ul class="sub-menu">
+                              <li><a href="">Цемент</a></li>
+                              <li><a href="">Добавки для бетонов и растворов</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="">Кирпич</a>
+                            <ul class="sub-menu">
+                              <li><a href="">Строительный кирпич</a></li>
+                              <li><a href="">Облицовочный кирпич</a></li>
+                              <li><a href="">Шамотный кирпич</a></li>
+                              <li><a href="">Клинкерный кирпич</a></li>
+                              <li><a href="">Гибкие связи</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="">Кирпич</a>
+                            <ul class="sub-menu">
+                              <li><a href="">Строительный кирпич</a></li>
+                              <li><a href="">Облицовочный кирпич</a></li>
+                              <li><a href="">Шамотный кирпич</a></li>
+                              <li><a href="">Клинкерный кирпич</a></li>
+                              <li><a href="">Гибкие связи</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="">Кирпич</a>
+                            <ul class="sub-menu">
+                              <li><a href="">Строительный кирпич</a></li>
+                              <li><a href="">Облицовочный кирпич</a></li>
+                              <li><a href="">Шамотный кирпич</a></li>
+                              <li><a href="">Клинкерный кирпич</a></li>
+                              <li><a href="">Гибкие связи</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="">Кирпич</a>
+                            <ul class="sub-menu">
+                              <li><a href="">Строительный кирпич</a></li>
+                              <li><a href="">Облицовочный кирпич</a></li>
+                              <li><a href="">Шамотный кирпич</a></li>
+                              <li><a href="">Клинкерный кирпич</a></li>
+                              <li><a href="">Гибкие связи</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="">Кирпич</a>
+                            <ul class="sub-menu">
+                              <li><a href="">Строительный кирпич</a></li>
+                              <li><a href="">Облицовочный кирпич</a></li>
+                              <li><a href="">Шамотный кирпич</a></li>
+                              <li><a href="">Клинкерный кирпич</a></li>
+                              <li><a href="">Гибкие связи</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li><a href="">Столярные изделия</a>
+                    <div class="next"></div>
+                    </li>
+                    <li><a href="">Окна и двери</a>
+                    <div class="next"></div>
+                    </li>
+                    <li><a href="catalog.html">Сантехника</a>
+                      <div class="next"></div>
+                      <div class="nav_subcategories">
+                        <div class="nav_title">
+                          <span class="btn-back"></span>
+                          <h3>Сантехника</h3>
+                          <span class="header_nav_left-block-closed closed">x</span>
+                        </div>
+                        <ul>
+                          <li><a href="">тЕСТОВЫЙ СПИСОК</a>
+                            <ul class="sub-menu">
+                              <li><a href="">Тест</a></li>
+                              <li><a href="">тест</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="">Кирпич</a>
+                            <ul class="sub-menu">
+                              <li><a href="">Строительный кирпич</a></li>
+                              <li><a href="">Облицовочный кирпич</a></li>
+                              <li><a href="">Шамотный кирпич</a></li>
+                              <li><a href="">Клинкерный кирпич</a></li>
+                              <li><a href="">Гибкие связи</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="">Блоки строительные</a>
+                            <ul class="sub-menu">
+                              <li><a href="">Блоки газобетонные</a></li>
+                              <li><a href="">Пазогребневые плиты</a></li>
+                              <li><a href="">Блоки керамзитобетонные</a></li>
+                              <li><a href="">Блоки керамические</a></li>
+                              <li><a href="">Перемычки</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="">Фанера, OSB, ДСП, ДВП</a>
+                            <ul class="sub-menu">
+                              <li><a href="">Фанера</a></li>
+                              <li><a href="">OSB</a></li>
+                              <li><a href="">ДВП</a></li>
+                              <li><a href="">ДСП</a></li>
+                              <li><a href="">ЦСП</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="">Песок, щебень, керамзит</a>
+                            <ul class="sub-menu">
+                              <li><a href="">Керамзит</a></li>
+                              <li><a href="">Песок</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="">Строительные смеси, грунтовки</a>
+                            <ul class="sub-menu">
+                              <li><a href="">Штукатурки</a></li>
+                              <li><a href="">Грунтовки</a></li>
+                              <li><a href="">Плиточные клеи</a></li>
+                              <li><a href="">Шпаклевки</a></li>
+                              <li><a href="">Наливные полы</a></li>
+                              <li><a href="">Цементно-песчаные смеси</a></li>
+                              <li><a href="">Кладочные и монтажные смеси</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="">Гипсокартон, ГВЛ, СМЛ</a>
+                            <ul class="sub-menu">
+                              <li><a href="">Гипсокартон</a></li>
+                              <li><a href="">Гипсоволокнистый лист</a></li>
+                              <li><a href="">Аквапанель</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="">Профиль и комплектующие</a>
+                            <ul class="sub-menu">
+                              <li><a href="">Профили для гипсокартона</a></li>
+                              <li><a href="">Подвесы</a></li>
+                              <li><a href="">Соединитель профиля</a></li>
+                              <li><a href="">Уплотнительные ленты</a></li>
+                              <li><a href="">Удлинитель профиля</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="">Пены, герметики, клей</a>
+                            <ul class="sub-menu">
+                              <li><a href="">Клей универсальный</a></li>
+                              <li><a href="">Пена монтажная</a></li>
+                              <li><a href="">Клей жидкие гвозди</a></li>
+                              <li><a href="">Герметики</a></li>
+                              <li><a href="">Пистолеты</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="">Сухие смеси и грунтовки</a>
+                            <ul class="sub-menu">
+                              <li><a href="">Цемент</a></li>
+                              <li><a href="">Добавки для бетонов и растворов</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="">Кирпич</a>
+                            <ul class="sub-menu">
+                              <li><a href="">Строительный кирпич</a></li>
+                              <li><a href="">Облицовочный кирпич</a></li>
+                              <li><a href="">Шамотный кирпич</a></li>
+                              <li><a href="">Клинкерный кирпич</a></li>
+                              <li><a href="">Гибкие связи</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="">Кирпич</a>
+                            <ul class="sub-menu">
+                              <li><a href="">Строительный кирпич</a></li>
+                              <li><a href="">Облицовочный кирпич</a></li>
+                              <li><a href="">Шамотный кирпич</a></li>
+                              <li><a href="">Клинкерный кирпич</a></li>
+                              <li><a href="">Гибкие связи</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="">Кирпич</a>
+                            <ul class="sub-menu">
+                              <li><a href="">Строительный кирпич</a></li>
+                              <li><a href="">Облицовочный кирпич</a></li>
+                              <li><a href="">Шамотный кирпич</a></li>
+                              <li><a href="">Клинкерный кирпич</a></li>
+                              <li><a href="">Гибкие связи</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="">Кирпич</a>
+                            <ul class="sub-menu">
+                              <li><a href="">Строительный кирпич</a></li>
+                              <li><a href="">Облицовочный кирпич</a></li>
+                              <li><a href="">Шамотный кирпич</a></li>
+                              <li><a href="">Клинкерный кирпич</a></li>
+                              <li><a href="">Гибкие связи</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="">Кирпич</a>
+                            <ul class="sub-menu">
+                              <li><a href="">Строительный кирпич</a></li>
+                              <li><a href="">Облицовочный кирпич</a></li>
+                              <li><a href="">Шамотный кирпич</a></li>
+                              <li><a href="">Клинкерный кирпич</a></li>
+                              <li><a href="">Гибкие связи</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li><a href="">Напольные покрытия</a>
+                    <div class="next"></div>
+                    </li>
+                    <li><a href="">Внутренняя отделка</a>
+                    <div class="next"></div>
+                    </li>
+                    <li><a href="">Наружная отделка</a>
+                    <div class="next"></div>
+                    </li>
+                    <li><a href="">Отопительное оборудование</a>
+                    <div class="next"></div>
+                    </li>
+                    <li><a href="">Водоснабжение и канализация</a>
+                    <div class="next"></div>
+                    </li>
+                    <li><a href="">Электрика и освещение</a>
+                    <div class="next"></div>
+                    </li>
+                    <li><a href="">Вентиляция и кондиционирование</a>
+                    <div class="next"></div>
+                    </li>
+                    <li><a href="">Метизы и крепеж</a>
+                    <div class="next"></div>
+                    </li>
+                    <li><a href="">Средства индивидуальной защиты</a>
+                    <div class="next"></div>
+                    </li>
+                    <li><a href="">Хозяйственные товары</a>
+                    <div class="next"></div>
+                    </li>
+                    <li><a href="">Товары для сада</a>
+                    <div class="next"></div>
+                    </li>
+                    <li><a href="">Товары для огорода</a>
+                    <div class="next"></div>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+
+          </div>
+          <div class="header_nav_right">
+            <div class="header_nav_right-catalog">
+              <span class="open-category">Каталог товаров</span>
+              <span class="header_nav_right-catalog-closed closed">x</span>
+            </div>
+            <nav id="nav">
+              <!--             удалить блок div без класса перед подключением меню Wordpress-->
+              <div>
+                <ul>
+                  <li><a href="">Акции</a></li>
+                  <li><a href="">Доставка и самовывоз</a></li>
+                  <li class="menu-item-has-children">
+                    <a href="">Наши услуги</a>
+                    <ul class="sub-menu">
+                      <li><a href="">Наши услуги1</a></li>
+                      <li><a href="">Наши услуги2</a></li>
+                      <li><a href="">Наши услуги3</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="">О компании</a></li>
+                  <li><a href="">Статьи</a></li>
+                  <li><a href="">Вакансии</a></li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+          <a href="" class="personal_area"></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="slider_top_block">
+      <div class="grid_container">
+        <div class="slider_top">
+          <div class="slide_top">
+            <div class="slide_top_info">
+              <h2>Все для ремонта <br> в одном месте </h2>
+              <p class="slide-text">Значимость этих проблем.Значимость этих проблем.Значимость этих проблем.</p>
+              <a href="" class="catalog">Каталог</a>
+            </div>
+            <div class="slide_top_img">
+              <img src="public/images/slide_top.png" alt="">
+            </div>
+          </div>
+          <div class="slide_top">
+            <div class="slide_top_info">
+              <h2>Все для ремонта в одном месте </h2>
+              <p class="slide-text">Значимость этих проблем.Значимость этих проблем.Значимость этих проблем.</p>
+              <a href="" class="catalog">Каталог</a>
+            </div>
+            <div class="slide_top_img">
+              <img src="public/images/slide_top.png" alt="">
+            </div>
+          </div>
+          <div class="slide_top">
+            <div class="slide_top_info">
+              <h2>Все для ремонта в одном месте </h2>
+              <p class="slide-text">Значимость этих проблем.Значимость этих проблем.Значимость этих проблем.</p>
+              <a href="" class="catalog">Каталог</a>
+            </div>
+            <div class="slide_top_img">
+              <img src="public/images/slide_top.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="index_category">
+      <div class="grid_container">
+        <div class="category_see_all">
+          <span class="category_see_all-title">Категории</span>
+          <a href="" class="category_link">Смотреть все</a>
+        </div>
+        <div class="category_wrapper">
+          <a href="" class="category_article">
+
+            <div class="category_article_img">
+              <img src="public/images/article_category.png" alt="">
+            </div>
+            <h3>Стройматериалы</h3>
+          </a>
+          <a href="" class="category_article">
+            <div class="category_article_img">
+              <img src="public/images/article_category2.png" alt="">
+            </div>
+            <h3>Столярные изделия</h3>
+          </a>
+          <a href="" class="category_article">
+            <div class="category_article_img">
+              <img src="public/images/article_category3.png" alt="">
+            </div>
+            <h3>Окна и двери</h3>
+          </a>
+          <a href="" class="category_article">
+            <div class="category_article_img">
+              <img src="public/images/article_category4.png" alt="">
+            </div>
+            <h3>Напольные покрытия</h3>
+          </a>
+          <a href="" class="category_article">
+            <div class="category_article_img">
+              <img src="public/images/article_category5.png" alt="">
+            </div>
+            <h3>Внутренняя отделка</h3>
+          </a>
+          <a href="" class="category_article">
+            <div class="category_article_img">
+              <img src="public/images/article_category6.png" alt="">
+            </div>
+            <h3>Наружная отделка</h3>
+          </a>
+          <a href="" class="category_article">
+            <div class="category_article_img">
+              <img src="public/images/article_category7.png" alt="">
+            </div>
+            <h3>Отопительное оборудование</h3>
+          </a>
+          <a href="" class="category_article">
+            <div class="category_article_img">
+              <img src="public/images/article_category8.png" alt="">
+            </div>
+            <h3>Водоснабжение и канализация</h3>
+          </a>
+          <a href="" class="category_article">
+            <div class="category_article_img">
+              <img src="public/images/article_category9.png" alt="">
+            </div>
+            <h3>Электрика и освещение</h3>
+          </a>
+          <a href="" class="category_article">
+            <div class="category_article_img">
+              <img src="public/images/article_category10.png" alt="">
+            </div>
+            <h3>Метизы и крепеж</h3>
+          </a>
+          <a href="" class="category_article">
+            <div class="category_article_img">
+              <img src="public/images/article_category11.png" alt="">
+            </div>
+            <h3>Хозяйственные товары</h3>
+          </a>
+          <a href="" class="category_article">
+            <div class="category_article_img">
+              <img src="public/images/article_category12.png" alt="">
+            </div>
+            <h3>Товары для сада</h3>
+          </a>
+          <a href="" class="category_article">
+            <div class="category_article_img">
+              <img src="public/images/article_category13.png" alt="">
+            </div>
+            <h3>Товары для огорода</h3>
+          </a>
+          <a href="" class="category_article">
+            <div class="category_article_img">
+              <img src="public/images/article_category14.png" alt="">
+            </div>
+            <h3>Стройматериалы</h3>
+          </a>
+          <a href="" class="category_article">
+            <div class="category_article_img">
+              <img src="public/images/article_category15.png" alt="">
+            </div>
+            <h3>Товары для огорода</h3>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="recommend_you">
+      <div class="grid_container">
+        <h3 class="block_title">Рекомендуем вам</h3>
+        <div class="recommend_you_wrapper">
+          <article class="recommend_product">
+            <a href="">
+              <div class="recommend_product_img">
+                <img src="public/images/product_article.png" alt="">
+              </div>
+              <div class="recommend_product_articul">
+                <span class="name_articul">Артикул:</span>
+                <span class="number_articul">457746883</span>
+              </div>
+              <h2 class="recommend_product_title">Смеситель для кухни Lemark Omega LM3104С Третья строка</h2>
+              <div class="recommend_product_price">
+                <span class="price">10 210</span>
+                <span class="price_currency">₽</span>                
+                <span class="recommend_product_price_basket"></span>
+                <span class="recommend_product_price_basket basket_product"></span>
+              </div>
+            </a>
+          </article>
+          <article class="recommend_product">
+            <a href="">
+              <div class="recommend_product_img">
+                <img src="public/images/product_article.png" alt="">
+              </div>
+              <div class="recommend_product_articul">
+                <span class="name_articul">Артикул:</span>
+                <span class="number_articul">457746883</span>
+              </div>
+              <h2 class="recommend_product_title">Смеситель для кухни Lemark Omega LM3104С Третья строка</h2>
+              <div class="recommend_product_price">
+                <span class="price">10 210</span>
+                <span class="price_currency">₽</span>                
+                <span class="recommend_product_price_basket"></span>
+                <span class="recommend_product_price_basket basket_product"></span>
+              </div>
+            </a>
+          </article>
+          <article class="recommend_product">
+            <a href="">
+              <div class="recommend_product_img">
+                <img src="public/images/product_article.png" alt="">
+              </div>
+              <div class="recommend_product_articul">
+                <span class="name_articul">Артикул:</span>
+                <span class="number_articul">457746883</span>
+              </div>
+              <h2 class="recommend_product_title">Смеситель для кухни Lemark Omega LM3104С Третья строка</h2>
+              <div class="recommend_product_price">
+                <span class="price">10 210</span>
+                <span class="price_currency">₽</span>                
+                <span class="recommend_product_price_basket"></span>
+                <span class="recommend_product_price_basket basket_product"></span>
+              </div>
+            </a>
+          </article>
+          <article class="recommend_product">
+            <a href="">
+              <div class="recommend_product_img">
+                <img src="public/images/product_article.png" alt="">
+              </div>
+              <div class="recommend_product_articul">
+                <span class="name_articul">Артикул:</span>
+                <span class="number_articul">457746883</span>
+              </div>
+              <h2 class="recommend_product_title">Смеситель для кухни Lemark Omega LM3104С Третья строка</h2>
+              <div class="recommend_product_price">
+                <span class="price">10 210</span>
+                <span class="price_currency">₽</span>
+              </div>
+            </a>
+          </article>
+          <article class="recommend_product">
+            <a href="">
+              <div class="recommend_product_img">
+                <img src="public/images/product_article.png" alt="">
+              </div>
+              <div class="recommend_product_articul">
+                <span class="name_articul">Артикул:</span>
+                <span class="number_articul">457746883</span>
+              </div>
+              <h2 class="recommend_product_title">Смеситель для кухни Lemark Omega LM3104С Третья строка</h2>
+              <div class="recommend_product_price">
+                <span class="price">10 210</span>
+                <span class="price_currency">₽</span>
+              </div>
+            </a>
+          </article>
+        </div>
+      </div>
+    </div>
+    <div class="index_shares">
+      <div class="grid_container">
+        <div class="shares_wrapper">
+          <article class="shares_article">
+            <a href="">
+              <div class="shares_article_img">
+                <img src="public/images/shares1.png" alt="">
+              </div>
+              <div class="shares_article_right">
+                <h4 class="shares_article_title">
+                  <span class="bold">
+                    Ликвидация
+                  </span>
+                  товаров для дачи
+                </h4>
+                <button class="shares_article_link">Купить</button>
+              </div>
+            </a>
+          </article>
+          <article class="shares_article">
+            <a href="">
+              <div class="shares_article_img">
+                <img src="public/images/shares2.png" alt="">
+              </div>
+              <div class="shares_article_right">
+                <h4 class="shares_article_title">
+                  <span class="bold">
+                    Хиты <br> продаж
+                  </span>
+
+                </h4>
+                <button class="shares_article_link">Купить</button>
+              </div>
+            </a>
+          </article>
+        </div>
+      </div>
+    </div>
+    <div class="seasonal_product recommend_you">
+      <div class="grid_container">
+        <h3 class="block_title">Сезонные товары</h3>
+        <div class="recommend_you_wrapper">
+          <article class="seasonal_product_sale recommend_product">
+            <a href="">
+              <div class="recommend_product_img">
+                <img src="public/images/product_article.png" alt="">
+              </div>
+              <div class="recommend_product_articul">
+                <span class="name_articul">Артикул:</span>
+                <span class="number_articul">457746883</span>
+              </div>
+              <h2 class="recommend_product_title">Смеситель для кухни Lemark Omega LM3104С Третья строка</h2>
+              <div class="recommend_product_price">
+                <div class="recommend_product_price-sale">
+                  <span class="price-sale">11 210</span>
+                  <span class="price-sale price_currency">₽</span>
+                </div>
+                <span class="price">10 210</span>
+                <span class="price_currency">₽</span>                
+                <span class="recommend_product_price_basket"></span>
+                <span class="recommend_product_price_basket basket_product"></span>
+              </div>
+              
+            </a>
+          </article>
+          <article class="seasonal_product_sale recommend_product">
+            <a href="">
+              <div class="recommend_product_img">
+                <img src="public/images/product_article.png" alt="">
+              </div>
+              <div class="recommend_product_articul">
+                <span class="name_articul">Артикул:</span>
+                <span class="number_articul">457746883</span>
+              </div>
+              <h2 class="recommend_product_title">Смеситель для кухни Lemark Omega LM3104С Третья строка</h2>
+              <div class="recommend_product_price">
+                <div class="recommend_product_price-sale">
+                  <span class="price-sale">11 210</span>
+                  <span class="price-sale price_currency">₽</span>
+                </div>
+                <span class="price">10 210</span>
+                <span class="price_currency">₽</span>                
+                <span class="recommend_product_price_basket"></span>
+                <span class="recommend_product_price_basket basket_product"></span>
+              </div>
+            </a>
+          </article>
+          <article class="seasonal_product_sale recommend_product">
+            <a href="">
+              <div class="recommend_product_img">
+                <img src="public/images/product_article.png" alt="">
+              </div>
+              <div class="recommend_product_articul">
+                <span class="name_articul">Артикул:</span>
+                <span class="number_articul">457746883</span>
+              </div>
+              <h2 class="recommend_product_title">Смеситель для кухни Lemark Omega LM3104С Третья строка</h2>
+              <div class="recommend_product_price">
+                <div class="recommend_product_price-sale">
+                  <span>11 210</span>
+                  <span class="price_currency">₽</span>
+                </div>
+                <span class="price">10 210</span>
+                <span class="price_currency">₽</span>
+              </div>
+            </a>
+          </article>
+          <article class="seasonal_product_sale recommend_product">
+            <a href="">
+              <div class="recommend_product_img">
+                <img src="public/images/product_article.png" alt="">
+              </div>
+              <div class="recommend_product_articul">
+                <span class="name_articul">Артикул:</span>
+                <span class="number_articul">457746883</span>
+              </div>
+              <h2 class="recommend_product_title">Смеситель для кухни Lemark Omega LM3104С Третья строка</h2>
+              <div class="recommend_product_price">
+                <div class="recommend_product_price-sale">
+                  <span>11 210</span>
+                  <span class="price_currency">₽</span>
+                </div>
+                <span class="price">10 210</span>
+                <span class="price_currency">₽</span>
+              </div>
+            </a>
+          </article>
+          <article class="seasonal_product_sale recommend_product">
+            <a href="">
+              <div class="recommend_product_img">
+                <img src="public/images/product_article.png" alt="">
+              </div>
+              <div class="recommend_product_articul">
+                <span class="name_articul">Артикул:</span>
+                <span class="number_articul">457746883</span>
+              </div>
+              <h2 class="recommend_product_title">Смеситель для кухни Lemark Omega LM3104С Третья строка</h2>
+              <div class="recommend_product_price">
+                <div class="recommend_product_price-sale">
+                  <span>11 210</span>
+                  <span class="price_currency">₽</span>
+                </div>
+                <span class="price">10 210</span>
+                <span class="price_currency">₽</span>
+              </div>
+            </a>
+          </article>
+        </div>
+      </div>
+    </div>
+    <div class="special_prices">
+      <div class="grid_container">
+        <div  class="special_prices_block">
+          <h4>Специальные цены <br> на электроинструменты</h4>
+          <a href="" class="special_prices_button">Успеть купить</a>
+        </div>
+      </div>
+    </div>
+    <div class="index_news">
+      <div class="grid_container">
+        <div class="index_news_wrapper">
+          <div class="index_news_left">
+            <div class="index_news_title">
+              <h4>Новости</h4>
+              <a href="" class="index_news_link">Все новости</a>
+            </div>
+            <div class="index_news_article">
+              <article class="index_news-block">
+                <span class="date">20.05.2020</span>
+                <a href="" class="news_title">
+                  <h2>
+                    Строительные материалы «уходят» в онлайн: почему россияне чаще покупают их через интернет?
+                  </h2>
+                </a>
+              </article>
+              <article class="index_news-block">
+                <span class="date">20.05.2020</span>
+                <a href="" class="news_title">
+                  <h2>
+                    Строительные материалы «уходят» в онлайн: почему россияне чаще покупают их через интернет?
+                  </h2>
+                </a>
+              </article>
+              <article class="index_news-block">
+                <span class="date">20.05.2020</span>
+                <a href="" class="news_title">
+                  <h2>
+                    Строительные материалы «уходят» в онлайн: почему россияне чаще покупают их через интернет?
+                  </h2>
+                </a>
+              </article>
+            </div>
+          </div>
+          <div class="index_news_right">
+            <article class="index_news-block">
+              <a href="" class="index_news_img">
+                <img src="public/images/news.jpg" alt="">
+              </a>
+              <div class="index_news_info">
+                <span class="date">20.05.2020</span>
+                <a href="" class="news_title">
+                  <h2>
+                    Строительные материалы «уходят» в онлайн: почему россияне чаще покупают их через интернет?
+                  </h2>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="index_aboutus">
+      <div class="grid_container">
+        <h1 class="index_title">
+          <span class="green">
+            Данила-Мастер
+          </span>
+          - интернет-магазин
+        </h1>
+        <p>Господа, начало повседневной работы по формированию позиции, в своём классическом представлении, допускает внедрение направлений прогрессивного развития. Но некоторые особенности внутренней политики и по сей день остаются уделом либералов, которые жаждут быть обнародованы. Вот вам яркий пример современных тенденций - разбавленное изрядной долей эмпатии, рациональное мышление позволяет оценить значение направлений прогрессивного развития. Приятно, граждане, наблюдать, как ключевые особенности структуры проекта, вне зависимости от их уровня, должны быть обнародованы! Как уже неоднократно упомянуто, сторонники тоталитаризма в науке могут быть превращены в посмешище, хотя само их существование приносит несомненную пользу обществу. Мы вынуждены отталкиваться от того, что сложившаяся структура организации создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса кластеризации усилий.
+        </p>
+      </div>
+    </div>
+    <div class="guarantee">
+      <div class="grid_container">
+        <h3 class="block_title">Мы гарантируем</h3>
+        <div class="guarantee_wrapper">
+          <article class="guarantee_article">
+            <h4 class="guarantee_title">
+              Легкий обмен и возврат
+            </h4>
+            <div class="guarantee_list">
+              <ul>
+                <li>В любой день до истечения срока годности товара</li>
+                <li>Без чека</li>
+                <li>В любом нашем магазине</li>
+              </ul>
+            </div>
+          </article>
+          <article class="guarantee_article">
+            <h4 class="guarantee_title">
+              Доставка
+            </h4>
+            <div class="guarantee_list">
+              <ul>
+                <li>В любой день до истечения срока годности товара</li>
+                <li>Без чека</li>
+                <li>В любом нашем магазине</li>
+              </ul>
+            </div>
+          </article>
+          <article class="guarantee_article">
+            <h4 class="guarantee_title">
+              Большой спектр услуг
+            </h4>
+            <div class="guarantee_list">
+              <ul>
+                <li>В любой день до истечения срока годности товара</li>
+                <li>Без чека</li>
+                <li>В любом нашем магазине</li>
+              </ul>
+            </div>
+          </article>
+          <article class="guarantee_article">
+            <h4 class="guarantee_title">
+              Работаем с юридическими лицами
+            </h4>
+            <div class="guarantee_list">
+              <ul>
+                <li>В любой день до истечения срока годности товара</li>
+                <li>Без чека</li>
+                <li>В любом нашем магазине</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer_top">
+      <div class="grid_container">
+        <div class="footer_top_wrapper">
+          <div class="footer_top_left">
+            <div class="footer_top_list">
+              <h5>Компания</h5>
+              <ul>
+                <li><a href="">О компании</a></li>
+                <li><a href="">Контакты</a></li>
+                <li><a href="">Вакансии</a></li>
+              </ul>
+            </div>
+            <div class="footer_top_list">
+              <h5>Услуги</h5>
+              <ul>
+                <li>
+                  <a href="">Доставка и разгрузка</a>
+                </li>
+                <li>
+                  <a href="">Доставка и разгрузка</a>
+                </li>
+                <li>
+                  <a href="">Доставка и разгрузка</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer_top_list">
+              <h5>Покупателям</h5>
+              <ul>
+                <li><a href="">Оплата заказа</a></li>
+                <li><a href="">Обмен и возврат</a></li>
+                <li><a href="">Статьи</a></li>
+                <li><a href="">О защите потребителей</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer_top_right">
+            <a href="tel:" class="phone">8 (800) 000-00-00</a>
+            <span id="button_phone">
+            <a href="#modal_form" class="button_phone" data-effect="mfp-zoom-in">Заказать звонок</a>
+            </span>
+            <div class="footer_top_soial-link_email">
+              <div class="footer_top_email">
+                <span>Напишите нам:</span>
+                <a href="mailto:info@yandex.ru">info@yandex.ru</a>
+              </div>
+              <div class="footer_top_soial-link">
+                <a href="" class="telegram"></a>
+                <a href="" class="wh"></a>
+                <a href="" class="inst"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer_bottom">
+      <div class="grid_container">
+        <div class="footer_bottom_wrapper">
+          <div class="footer_bottom_left">
+            <span class="footer_bottom-link">© 2020 - Данила-мастер</span>
+            <a href="" class="footer_bottom-link">Политика конфиденциальности</a>
+            <a href="" class="footer_bottom-link">Карта сайта</a>
+          </div>
+          <div class="footer_bottom_right">
+            <a href="" class="is-art">Разработано</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="modal_form"  class="modal_form white-popup mfp-with-anim mfp-hide">     
+     <h6 class="modal_form-title">Заказать обратный звонок</h6>
+     <div class="modal_form-info">
+       <p>
+       Введите свой номер телефона и Вам поступит бесплатный звонок от нашего контактного центра.
+       </p>
+     </div>
+     <form action="">
+        <input type="tel" id="phone5" placeholder="+7(999)999-99-99" autocomplete="off" required>
+        <div class="button_block">
+          <button type="submit">Заказать</button>
+          <p>Я даю согласие на обработку моих персональных данных</p>
+        </div>
+      </form>
+    </div>
+  </footer>
+
+  <script src="public/js/jquery/jquery-3.5.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="public/js/jquery-ui.min.js"></script>
+  <script src="public/js/jquery.ui.touch-punch.min.js"></script>
+  <script src="public/js/jquery/jquery.slick/slick.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+  <script type="text/javascript" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/jquery.inputmask.bundle.js?ver=5.3.4"></script>
+  <script src="public/js/user.js"></script>
+  
+<!--  табы  -->
+  <script>
+    $(function() {
+      $("#tabs").tabs();
+    });
+  </script>
+  
+<!--  двойной клик для мобильных устройств-->
+ 
+ <script>
+   (function($, window, document, undefined) {
+     $.fn.doubleTapToGo = function(params) {
+       if (!('ontouchstart' in window) &&
+         !navigator.msMaxTouchPoints &&
+         !navigator.userAgent.toLowerCase().match(/windows phone os 7/i)) return false;
+
+       this.each(function() {
+         var curItem = false;
+
+         $(this).on('click', function(e) {
+           var item = $(this);
+           if (item[0] != curItem[0]) {
+             e.preventDefault();
+             curItem = item;
+           }
+         });
+
+         $(document).on('click touchstart MSPointerDown', function(e) {
+           var resetItem = true,
+             parents = $(e.target).parents();
+
+           for (var i = 0; i < parents.length; i++)
+             if (parents[i] == curItem[0])
+               resetItem = false;
+
+           if (resetItem)
+             curItem = false;
+         });
+       });
+       return this;
+     };
+   })(jQuery, window, document);
+ </script>
+
+ <script>
+   $(function() {
+     $('#nav li:has(ul)').doubleTapToGo();
+   });
+ </script>
+
+
+ </body>
+
+</html>

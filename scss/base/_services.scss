@@ -1,0 +1,28 @@
+.services{
+  background: #F9F9FA;
+  padding: 0 0 120px 0;
+  
+  .stock-title{
+    margin: 0 0 25px 0;
+  }
+  
+  .services_info{
+    max-width: 700px;
+    margin: 0 0 40px;
+  }
+  
+  .services_article{
+    width: calc(25% - 34px);
+    margin: 0 45px 45px 0;
+  }
+  .services_article:nth-child(4n + 4){
+    margin: 0 0 45px 0;
+  }
+  
+  .services_article h3 {
+    max-width: 84%;
+  }
+  
+  
+  
+}

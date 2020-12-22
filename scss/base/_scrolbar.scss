@@ -1,0 +1,49 @@
+
+
+  ::-webkit-scrollbar {
+    background: #E4E4E4;
+    /* 1 - скроллбар */
+  }
+
+  ::-webkit-scrollbar-button {
+    display: none;
+    /* 2 - кнопка */
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #FFFFFF;
+    /* 3 - трек */
+  }
+
+  ::-webkit-scrollbar-track-piece {
+    background: #FFFFFF;    
+    border: 1px solid #E4E4E4;
+    box-sizing: border-box;
+    /* 4 - видимая часть трека */
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #E4E4E4;
+    /* 5 - ползунок */
+  }
+
+  ::-webkit-scrollbar-corner {
+    display: none;
+    /* 6 - уголок */
+  }
+
+ 
+
+//::-webkit-scrollbar {
+//    width: 12px;
+//}
+// 
+//::-webkit-scrollbar-track {
+//    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+//    border-radius: 10px;
+//}
+// 
+//::-webkit-scrollbar-thumb {
+//    border-radius: 10px;
+//    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+//}

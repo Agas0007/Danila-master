@@ -1,0 +1,41 @@
+.stock_breadcrumbs{
+  background: #fff;
+}
+
+.stock{
+  margin: 0 0 60px 0;
+}
+
+.stock-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 44px;
+  color: #333333;
+  margin: 0 0 50px 0;
+}
+
+/*---------изминение цвета------------*/
+
+.stock_article {
+  margin: 0 20px 20px 0;
+}
+
+.stock_article:nth-child(2n + 2){
+  margin: 0 0 20px 0;
+}
+
+.stock_article:nth-child(3),
+.stock_article:nth-child(7){
+  background: #FFDD4D;
+  .shares_article_right {
+    color: #333333;
+  }
+}
+.stock_article:nth-child(4),
+.stock_article:nth-child(8){
+  background: #64B734;
+  .shares_article_right {
+    color: #fff;
+  }
+}

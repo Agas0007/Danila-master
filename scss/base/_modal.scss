@@ -1,0 +1,203 @@
+/*-------------------*/
+
+
+.white-popup {
+  position: relative;
+  background: #fff;
+  padding: 25px;
+  width: auto;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.mfp-zoom-in {
+  /* start state */
+  /* animate in */
+  /* animate out */
+}
+.mfp-zoom-in .mfp-with-anim {
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+  transform: scale(0.8);
+}
+.mfp-zoom-in.mfp-bg {
+  opacity: 0;
+  transition: all 0.3s ease-out;
+}
+.mfp-zoom-in.mfp-ready .mfp-with-anim {
+  opacity: 1;
+  transform: scale(1);
+}
+.mfp-zoom-in.mfp-ready.mfp-bg {
+  opacity: 0.8;
+}
+.mfp-zoom-in.mfp-removing .mfp-with-anim {
+  transform: scale(0.8);
+  opacity: 0;
+}
+.mfp-zoom-in.mfp-removing.mfp-bg {
+  opacity: 0;
+}
+
+
+/*---------стили для модального окна-----*/
+
+.modal_form {
+    max-width: 500px;
+    background: url(../images/back_top2.svg) no-repeat bottom #f2ffff;
+    background-size: cover;
+    border-radius: 5px;
+}
+
+.modal_form > .modal_form-head {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 22px;
+    color: #fff;
+    display: block;
+    margin: 0 0 25px 0;
+    display: block;
+    margin: 0 0 30px 0;
+}
+
+.modal_form .form_block-top {
+    display: flex;
+    flex-flow: row;
+    margin: 0 0 13px 0;
+}
+
+.modal_form .form_block-top input {
+    width: calc(50% - 5px);
+    margin: 0 10px 0 0;
+    background: #fff;
+    border: 0.5px solid #fff;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #152741;
+}
+
+.modal_form .form_block-top input:nth-child(2) {
+    margin: 0;
+}
+
+.modal_form textarea {
+    width: 100%;
+    min-height: 120px;
+    resize: vertical;
+    background: #fff;
+    border: 0.5px solid #fff;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #152741;
+    margin: 0 0 18px 0;
+}
+
+.modal_form .button-click {
+    background: linear-gradient(237.56deg, #ff0844 -44.64%, #ffb199 160.79%);
+    border: 1px solid #094873;
+    border: none;
+    border-radius: 5px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+    padding: 15px 43px;
+    margin: 0 auto;
+    display: block;
+}
+
+
+
+
+/*--------------модальное окно-----------*/
+
+
+.modal_form {
+  background: #FFFFFF;
+  border-radius: 5px;
+  padding: 40px;
+  width: 495px;
+  
+  .modal_form-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    color: #333333;
+    margin: 0 0 10px 0;
+  }
+  
+  .modal_form-info {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #333333;
+    margin: 0 0 25px 0;
+  }
+  
+  form{
+    input {
+      width: 100%;
+      background: #F1F1F1;
+      border: 1px solid #F1F1F1;
+      border-radius: 5px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 17px;
+      color: #333333;
+      padding: 17px;
+      margin: 0 0 25px 0;
+    }
+    
+    .button_block{
+      display: flex;
+      flex-flow: row;
+      align-items: center;
+      
+      p {
+        width: calc(100% - 200px);
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        color: #333333;
+      }
+      
+    }
+    
+    button {
+      margin: 0 20px 0 0;
+      background: #FFDD4D;
+      border-radius: 5px;
+      border: none;
+      outline: none;
+      width: 180px;
+      height: 50px;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+      color: #333333;
+    }
+  }
+  
+  
+  
+}

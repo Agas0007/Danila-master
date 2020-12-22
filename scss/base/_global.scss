@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+/*GLOBAL STYLE_____________________________
+    ___________________________________________*/
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  background: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  color: #333333;
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+.grid_container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+.clearfix:after {
+  display: block;
+  content: " ";
+  clear: both;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+//делает поле ввода белым
+input:-webkit-autofill {
+  color: #ffffff !important;
+}
+
+.compensate-for-scrollbar {
+  margin-right: 0 !important;
+}
+
+
+/*------list----------*/
+
+main ul {
+
+  li {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #333333;
+    padding: 0 0 0 14px;
+    margin: 0 0 15px 0;
+    position: relative;
+  }
+}
+main ul:not([class]) li::before {
+    position: absolute;
+    content: '';
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #FFDD4D;
+    left: 0;
+    top: 3px;
+  }
+
