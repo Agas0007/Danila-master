@@ -4451,6 +4451,7 @@ footer {
   .nav_category div ul li .nav_subcategories_active {
     left: 0;
     display: block;
+    overflow-y: scroll;
   }
 
   .nav_category div ul li .nav_subcategories_active .nav_title {
