@@ -4144,6 +4144,7 @@ footer {
 
   .header_hambuger:hover .header_nav_left {
     z-index: 99999;
+    overflow-y: scroll;
   }
 
   .header_nav_right .header_nav_right-catalog .header_nav_right-catalog-closed {
