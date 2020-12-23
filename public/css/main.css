@@ -4508,6 +4508,12 @@ footer {
     padding: 0 5px !important;
   }
 
+  .nav_category div ul li .nav_subcategories_active ul li > ul {
+    display: flex;
+    flex-flow: column;
+    
+  }
+
   .nav_category div ul li .nav_subcategories_active ul li ul li a {
     width: -webkit-fit-content !important;
     width: -moz-fit-content !important;
